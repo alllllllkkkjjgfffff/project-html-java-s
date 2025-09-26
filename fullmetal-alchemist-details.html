@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل فول ميتال الكمست</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>فول ميتال الكمست</h1>
+    </header>
+
+    <section>
+        <img src="images/fullmetal-alchemist.jpg" alt="فول ميتال">
+        <p>### أنمي Fullmetal Alchemist: Brotherhood (فول ميتال ألكيميست):
+            تدور القصة حول إدوارد إلريك وأخيه الأصغر ألفونسو إلريك، وهما كيميائيان يسعيان لاستعادة جسديهما بعد محاولة فاشلة لإعادة والدتهما إلى الحياة باستخدام الكيمياء. خلال هذه المحاولة، يفقد إدوارد ذراعه وساقه، بينما يفقد ألفونسو جسده بالكامل وتنتقل روحه إلى درع معدني. الأخوان ينطلقان في رحلة للبحث عن "حجر الفلاسفة"، وهو أداة كيميائية يُعتقد أنها تمنح قدرات غير محدودة وتساعدهما في استعادة ما فقداه. الأنمي يعالج مواضيع عميقة مثل الفداء، الإنسانية، والتضحية، مع مشاهد أكشن رائعة وشخصيات قوية.
+            
+            </p>
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/edward.jpg" alt="إدوارد إلريك">
+        <p>إدوارد إلريك هو الكيميائي الذي يسعى لاستعادة جسده وجسد أخيه باستخدام حجر الفيلسوف.</p>
+        
+        <img src="images/alphonse.jpg" alt="ألفونس إلريك">
+        <p>ألفونس إلريك هو الأخ الأصغر لإدوارد الذي فقد جسده بالكامل ويعيش بروح في درع.</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>

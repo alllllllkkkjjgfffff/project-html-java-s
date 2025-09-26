@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل كيميتسو نو يايبا</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>كيميتسو نو يايبا</h1>
+    </header>
+
+    <section>
+        <img src="images/demon-slayer.jpg" alt="ديمون سلاير">
+        <p>.### أنمي قاتل الشياطين (Demon Slayer):
+            تدور القصة حول صبي يُدعى تانجيرو كامادو، الذي يعيش حياة هادئة مع أسرته في الجبال. تتغير حياته بشكل مأساوي عندما تُقتل عائلته على يد الشياطين، وتتحول شقيقته نيزوكو إلى شيطان. رغم ذلك، تظل نيزوكو محتفظة ببعض من إنسانيتها. يقرر تانجيرو أن يصبح *قاتل شياطين* ليعثر على طريقة لإعادة شقيقته إلى إنسانيتها، وأيضًا للانتقام من الشيطان الذي قتل أسرته. خلال رحلته، يلتقي بزملاء مقاتلين ويخوض معارك شرسة ضد الشياطين باستخدام تقنيات التنفس الخاصة. الأنمي يتميز بجمال الرسوم والقصة المؤثرة التي تجمع بين الأكشن والعاطفة..</p>
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/tangiro.jpg" alt="تانجيرو كامادو">
+        <p>تانجيرو كامادو هو فتى طيب القلب يسعى لإنقاذ أخته وتحويلها من شيطان إلى إنسانة.</p>
+        
+        <img src="images/nezuko.jpg" alt="نيزوكو كامادو">
+        <p>نيزوكو كامادو هي أخت تانجيرو التي تحولت إلى شيطان لكنها تحتفظ بقدرتها على الشعور بالإنسانية.</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>

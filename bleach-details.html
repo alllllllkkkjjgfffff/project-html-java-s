@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل بليتش</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>بليتش</h1>
+    </header>
+
+    <section>
+        <img src="images/bleach.jpg" alt="ون بيس">
+        <p>## أنمي بليتش (Bleach):
+            تدور قصة *بليتش* حول فتى مراهق يدعى إيتشيغو كوروساكي، الذي يستطيع رؤية الأرواح منذ صغره. حياته تتغير تمامًا عندما يقابل *روكيا كوتشيكي*، وهي من *حاصدي الأرواح*، المسؤولين عن حماية العالم البشري من الأرواح الشريرة المعروفة باسم "الهولو". أثناء معركة ضد أحد هذه الأرواح، تحصل حادثة تجعل إيتشيغو يكتسب قوى حاصد الأرواح. يبدأ إيتشيغو في القتال ضد الهولو ويحاول حماية أصدقائه وعائلته، وفي الوقت نفسه يدخل عالم الأرواح ويكتشف أسرارًا كثيرة حوله وحول قوته الجديدة. الأنمي يجمع بين الأكشن، المغامرة، والألغاز مع طابع خارق للطبيعة.</p>
+
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/ichigo.jpg" alt="إيتشيغو كوروساكي">
+        <p>إيتشيغو كوروساكي هو طالب في المدرسة الثانوية يمتلك قوى الشينيغامي ويقاتل الأرواح الشريرة.</p>
+        
+        <img src="images/rukia.jpg" alt="روكيا كوتشيكي">
+        <p>روكيا كوتشيكي هي شينيغامي علمت إيتشيغو كيفية استخدام قوته لمحاربة الهولو.</p>
+
+ 
+        <img src="images/izen.jpg" alt="ايزين">
+        <p>ايزين سوسكي هو احد الشخصيات الرئيسية في انمي بليتش كان قائد الفرقة الخامسة في مجتمع الارواح لاكنه انقلب على المجتمع واصبح العدو الرئيسي لفترة كويلة بفضل ذكائة الحاد وقوته الخارقة في استخدام الخدع والتحكم في الحواس.</p>
+
+
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>

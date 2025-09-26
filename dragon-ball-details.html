@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل دراغون بول</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>دراغون بول</h1>
+    </header>
+
+    <section>
+        <img src="images/dragon-ball.jpg" alt="دراغون بول">
+        <p>### أنمي دراغون بول (Dragon Ball):
+            *دراغون بول* هو أحد أشهر الأنميات في العالم، ويبدأ بقصة صبي يدعى سون غوكو، الذي يمتلك قوة هائلة رغم مظهره الصغير. غوكو يذهب في مغامرات للبحث عن الكرات السبع السحرية المعروفة بـ"كرات التنين"، التي يمكنها تحقيق أي أمنية. القصة تتطور ليصبح غوكو مقاتلًا بارعًا يدافع عن الأرض ضد الأعداء الأشرار الذين يهددونها. مع تقدم السلسلة، يتعلم غوكو تقنيات قتالية متقدمة مثل "الكاميهاميها"، ويواجه مقاتلين أقوياء مثل فريزا وسيل وماجين بو. الأنمي يمزج بين القتال، الكوميديا، والدراما مع تركيز على التضحية والنمو الشخصي.</p>
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/goku.jpg" alt="سون غوكو">
+        <p>سون غوكو هو محارب من فصيلة السايان يسعى دائمًا للتدريب ليصبح أقوى ويحمي كوكب الأرض.</p>
+        
+        <img src="images/vegeta.jpg" alt="فيجيتا">
+        <p>فيجيتا هو أمير السايان وخصم غوكو الذي يسعى دائمًا لتجاوزه في القوة.</p>
+        
+        <img src="images/gohan.jpg" alt="غوهان">
+        <p>غوهان هو ابن غوكو ويظهر قدرات قتالية مذهلة على الرغم من حبه للدراسة.</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>

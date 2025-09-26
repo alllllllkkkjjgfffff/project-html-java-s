@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل القناص</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>القناص</h1>
+    </header>
+
+    <section>
+        <img src="images/hunter-x-hunter.jpg" alt="هنتر اكس هنتر">
+        <p>  أنمي Hunter x Hunter (هانتر × هانتر):
+            تدور القصة حول فتى يُدعى غون فريكس، الذي يطمح لأن يصبح *صيادًا* مثل والده المفقود جين فريكس. الصيادون هم أفراد يمتلكون مهارات استثنائية ويقومون بمهام خطيرة مثل البحث عن الكنوز أو مطاردة المجرمين. غون ينطلق في مغامراته ليجد والده ويصبح صيادًا معتمدًا. خلال رحلته، يقابل أصدقاء مميزين مثل كيلوا، كورابيكا، وليوريو. الأنمي يجمع بين المغامرات، المعارك الذهنية، والتكتيكات القتالية، حيث يواجه غون ورفاقه أعداء أقوياء ويكتشفون أسرارًا خطيرة عن عالم الصيادين.</p>
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/gon.jpg" alt="غون فريكس">
+        <p>غون فريكس هو شاب طموح يسعى للعثور على والده وأن يصبح قناصًا عظيمًا مثله.</p>
+        
+        <img src="images/killua.jpg" alt="كيلوا زولديك">
+        <p>كيلوا زولديك هو صديق غون وأحد أفراد عائلة زولديك الشهيرة بالاغتيالات.</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>

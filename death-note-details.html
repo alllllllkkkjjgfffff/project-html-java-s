@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل ديث نوت</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>ديث نوت</h1>
+    </header>
+
+    <section>
+        <img src="images/death-note.jpg" alt="ديث نوت">
+        <p>"ديث نوت" (Death Note) هو أنمي ياباني مشهور يستند إلى مانغا تحمل نفس الاسم. تدور قصته حول طالب عبقري في المدرسة الثانوية يُدعى "لايت ياجامي" يعثر على دفتر ملاحظات غامض يُسمى "دفتر الموت". هذا الدفتر يمنح حامله القدرة على قتل أي شخص بمجرد كتابة اسمه فيه مع معرفة وجهه.
+
+            يكتشف لايت هذه القدرة ويقرر استخدام الدفتر للقضاء على المجرمين حول العالم، بهدف خلق عالم مثالي خالٍ من الجريمة ويصبح هو "إله العالم الجديد". لكنه يواجه عقبات كبيرة عندما يبدأ المحقق العبقري "إل" في التحقيق حول سلسلة الوفيات الغامضة التي تحدث للمجرمين.
+            
+            الصراع بين لايت وإل يصبح المحور الرئيسي للقصة، حيث يطور الاثنان خططًا ذكية في محاولة لتفوق كل منهما على الآخر. يتناول الأنمي قضايا أخلاقية معقدة حول العدالة، القوة، وتأثيراتها على الشخص الذي يمتلكها.
+            
+            الأنمي يتميز بتوتره النفسي، والتشويق في الحبكة، والشخصيات المعقدة التي تجذب انتباه المشاهدين..</p>
+   
+
+
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/light.jpg" alt="ياغامي لايت">
+        <p>ياغامي لايت هو طالب ذكي يكتشف مذكرة الموت ويقرر تنظيف العالم من المجرمين.</p>
+        
+        <img src="images/l.jpg" alt="إل">
+        <p>إل هو المحقق الغامض الذي يسعى للإمساك بـ "كيرا" (ياغامي لايت).</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>
