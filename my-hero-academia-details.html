@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل بوكو نو هيرو</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>بوكو نو هيرو</h1>
+    </header>
+
+    <section>
+        <img src="images/my-hero-academi.jpg" alt="ماي هيرو">
+        <p>### أنمي My Hero Academia (أكاديمية الأبطال):
+            تدور القصة في عالم حيث يمتلك معظم الناس قوى خارقة تُعرف باسم "الكويرك". البطل الرئيسي، إيزوكو ميدوريا، هو شاب ولد بدون أي قوى، لكنه يطمح أن يصبح "البطل رقم واحد". رغم أنه لا يمتلك كويرك، يتم اختيار إيزوكو ليصبح خليفة لأعظم بطل في العالم، أول مايت، الذي يمنحه قوته "ون فور أول". إيزوكو ينضم إلى أكاديمية "يو إي" لتعلم كيف يكون بطلًا محترفًا، حيث يواجه تحديات شخصية ومواجهات مع أشرار يهددون المجتمع. الأنمي يتميز بقصص عن النمو الشخصي، الشجاعة، والصداقة.</p>
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/deku.jpg" alt="إيزوكو ميدوريا (ديكو)">
+        <p>إيزوكو ميدوريا هو طالب في أكاديمية الأبطال يحلم بأن يصبح البطل رقم 1 رغم أنه ولد بلا قوة خارقة.</p>
+        
+        <img src="images/allmight.jpg" alt="أول مايت">
+        <p>أول مايت هو البطل الأقوى في العالم والذي يعتبر مصدر إلهام لديكو، وهو الذي يمنحه قوته One for All.</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+      <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل ناروتو</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>ناروتو</h1>
+    </header>
+
+    <section>
+        <img src="images/naruto.jpg" alt="ناروتو">
+        <p>### أنمي ناروتو (Naruto):
+            تدور القصة حول صبي يدعى ناروتو أوزوماكي، الذي يحلم بأن يصبح الـ"هوكاجي"، وهو أقوى نينجا في قريته. ناروتو يعاني من الوحدة لأنه يحمل بداخله وحشًا قويًا يُدعى "الثعلب ذو التسعة ذيول"، الذي هاجم قريته في الماضي. رغم هذا، يتمتع ناروتو بروح مرحة وعزيمة لا تنكسر، وهو مستعد لفعل أي شيء ليحظى باعتراف الناس. على طول رحلته، يقابل أصدقاء مميزين مثل ساسكي وساكورا، ويخوض معارك ضد أعداء أقوياء. القصة مليئة بالتضحيات والصداقة، مع تركيز على تحقيق الأحلام والشجاعة في مواجهة الصعاب.
+            </p>
+        <h2>الأبطال الرئيسيون</h2>
+        <img src="images/naruto.jpg" alt="ناروتو أوزوماكي">
+        <p>ناروتو أوزوماكي هو نينجا يحلم بأن يصبح الهوكاجي ويحظى باحترام الجميع.</p>
+        
+        <img src="images/sasuke.jpg" alt="ساسكي أوتشيها">
+        <p>ساسكي أوتشيها هو آخر فرد من عشيرة أوتشيها القوية، ويبحث عن الانتقام من أخيه إيتاتشي.</p>
+        
+        <img src="images/sakura.jpg" alt="ساكورا هارونو">
+        <p>ساكورا هارونو هي نينجا قوية وتعد من أعضاء الفريق 7 مع ناروتو وساسكي.</p>
+
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    </section>
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>
