@@ -13,8 +13,3 @@
 
 ```bash
 git clone https://github.com/alllllllkkkjjgfffff/project-html-java-s.git
-
-
-لدخول إلى المجلد
-cd project-html-java-s
-
