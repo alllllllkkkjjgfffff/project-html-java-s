@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل ون بيس</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="Jquery3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header, footer").hide().fadeIn(2000);
+            $("section img, section p").hide().slideDown(2000);
+
+            $("section img").hover(function(){
+                $(this).fadeTo("slow", 0.7);
+            }, function(){
+                $(this).fadeTo("slow", 1.0);
+            });
+
+            $("a").click(function(event){
+                event.preventDefault();
+                let link = $(this).attr("href");
+                $("body").fadeOut(1000, function(){
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>ون بيس</h1>
+    </header>
+
+    <section>
+        <img src="images/one-piece.jpg" alt="ون بيس">
+        <p>.ون بيس هو أنمي ومغامرة ياباني شهير مستند إلى مانغا من تأليف إييتشيرو أودا. تدور القصة حول شاب يدعى مونكي دي لوفي، الذي يطمح لأن يصبح "ملك القراصنة" عبر العثور على الكنز الأسطوري المعروف باسم "ون بيس". لوفي يمتلك قدرة خاصة بعد أن أكل فاكهة شيطانية تُدعى "فاكهة المطاط"، والتي تجعل جسده مرناً كالمطاط.
+
+            لوفي ينطلق في رحلة بحرية مع طاقمه من القراصنة، كل فرد منهم لديه أهدافه وأحلامه الخاصة. الطاقم يشمل شخصيات مثل زورو، الذي يسعى لأن يصبح أقوى سياف في العالم، ونامي، التي تحلم برسم خريطة للعالم كله، وسانجي، الطاهي الذي يرغب في العثور على البحر الأسطوري "أول بلو"، وتشوبر، الطبيب الذي هو في الأصل حيوان رنة يمتلك قدرات بشرية.
+            
+            الأنمي معروف بمعاركه المثيرة وقصصه العاطفية، مع التركيز على الصداقة، الشجاعة، والمثابرة. عالم ون بيس مليء بالجزر الغريبة، الشخصيات المميزة، والقوى الخارقة التي تأتي من تناول "فاكهة الشيطان".
+            
+            إلى جانب الجانب المغامراتي، يتناول الأنمي موضوعات عميقة مثل الحرية، العدالة، والظلم، مما يجعله ممتعاً لجماهير من جميع الأعمار..</p>
+       
+            <h2>أبطال ون بيس</h2>
+            <div class="character">
+                <img src="images/luffy.jpg" alt="مونكي دي لوفي">
+                <h3>مونكي دي لوفي</h3>
+                <p>الكابتن والقائد الرئيسي لطاقم قبعة القش، يمتلك قدرة التحول إلى مطاطي بفضل فاكهة الشيطان.</p>
+            </div>
+            <div class="character">
+                <img src="images/zoro.jpg" alt="رونونوا زورو">
+                <h3>رورونوا زورو</h3>
+                <p>سياف ماهر وعضو في طاقم قبعة القش، يستخدم ثلاثة سيوف في المعارك.</p>
+            </div>
+            <div class="character">
+                <img src="images/nami.jpg" alt="نامي">
+                <h3>نامي</h3>
+                <p>ملاحة الطاقم والمتخصصة في الخرائط والطقس.</p>
+            </div>
+
+            <div class="character">
+                <img src="images/sangi.jpg" alt="سانجي">
+                <h3>سانجي</h3>
+                <p>سانجي هو طباخ الطاقم واليد اليسرى للقائد لوفي.</p>
+                <br>
+                <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            
+            
+
+    </section>
+    
+
+    <footer>
+        <p>معتز فيصل عباس</p>
+    </footer>
+</body>
+</center>
+</html>
