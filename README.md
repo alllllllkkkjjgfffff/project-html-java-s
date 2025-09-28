@@ -5,7 +5,9 @@
 
 🔗 رابط فيسبوك : [Facebook Share](https://www.facebook.com/share/1KDcXFYxt2/)
 
----
+
+## 🛠 Skills
+Javascript, HTML, CSS...
 
 ## 📥 تنزيل المشروع
 
